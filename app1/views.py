@@ -12,5 +12,11 @@ def portfolio_details(request):
 def service_details(request):
     return render(request, 'service-details.html')
 
-def starter_page(request):
-    return render(request, 'starter-page.html')
+def about(request):
+    return render(request, 'About.html')
+
+def contact(request):
+    return render(request, 'contact.html')
+
+def team(request):
+    return render(request, 'team.html')

@@ -16,7 +16,9 @@ def about(request):
     return render(request, 'About.html')
 
 def contact(request):
-    return render(request, 'contact.html')
+    return render(request, 'contact .html')
 
 def team(request):
     return render(request, 'team.html')
+def start(request):
+    return render(request, 'Start.html')

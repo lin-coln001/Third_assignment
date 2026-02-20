@@ -5,82 +5,55 @@
 {% endblock %}
 
 {% block content %}
-<body class="starter-page-page">
 
-  <header id="header" class="header d-flex align-items-center fixed-top">
-    <div class="container-fluid container-xl position-relative d-flex align-items-center">
 
-      <a href="index.html" class="logo d-flex align-items-center me-auto">
-        <!-- Uncomment the line below if you also wish to use an image logo -->
-        <!-- <img src="assets/img/logo.png" alt=""> -->
-        <h1 class="sitename">Techie</h1>
-      </a>
 
-      <nav id="navmenu" class="navmenu">
-        <ul>
-          <li><a href="#hero">Home</a></li>
-          <li><a href="#about">About</a></li>
-          <li><a href="#services">Services</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
-          <li><a href="#team">Team</a></li>
-<!--          <li class="dropdown"><a href="#"><span>Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
-<!--            <ul>-->
-<!--              <li><a href="#">Dropdown 1</a></li>-->
-<!--              <li class="dropdown"><a href="#"><span>Deep Dropdown</span> <i class="bi bi-chevron-down toggle-dropdown"></i></a>-->
-<!--                <ul>-->
-<!--                  <li><a href="#">Deep Dropdown 1</a></li>-->
-<!--                  <li><a href="#">Deep Dropdown 2</a></li>-->
-<!--                  <li><a href="#">Deep Dropdown 3</a></li>-->
-<!--                  <li><a href="#">Deep Dropdown 4</a></li>-->
-<!--                  <li><a href="#">Deep Dropdown 5</a></li>-->
-<!--                </ul>-->
-<!--              </li>-->
-<!--              <li><a href="#">Dropdown 2</a></li>-->
-<!--              <li><a href="#">Dropdown 3</a></li>-->
-<!--              <li><a href="#">Dropdown 4</a></li>-->
-<!--            </ul>-->
-<!--          </li>-->
-          <li><a href="#contact">Contact</a></li>
-        </ul>
-        <i class="mobile-nav-toggle d-xl-none bi bi-list"></i>
-      </nav>
-
-      <a class="btn-getstarted" href="#about">Get Started</a>
-
-    </div>
-  </header>
 
   <main class="main">
 
-    <!-- Page Title -->
-    <div class="page-title accent-background">
-      <div class="container position-relative">
-        <h1>Starter Page</h1>
-        <p>Esse dolorum voluptatum ullam est sint nemo et est ipsa porro placeat quibusdam quia assumenda numquam molestias.</p>
-        <nav class="breadcrumbs">
-          <ol>
-            <li><a href="index.html">Home</a></li>
-            <li class="current">Starter Page</li>
-          </ol>
-        </nav>
-      </div>
-    </div><!-- End Page Title -->
+  <!-- Page Title -->
+  <div class="page-title accent-background">
+    <div class="container position-relative">
+      <h1>Our Team</h1>
+      <p>Meet the talented professionals behind FlexiFrame — a passionate team of developers, designers, and strategists dedicated to building exceptional Bootstrap-powered websites.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="current">Our Team</li>
+        </ol>
+      </nav>
+    </div>
+  </div><!-- End Page Title -->
 
-    <!-- Starter Section Section -->
-    <section id="starter-section" class="starter-section section">
+  <!-- Team Section -->
+  <section id="team-section" class="team-section section">
 
-      <!-- Section Title -->
-      <div class="container section-title" data-aos="fade-up">
-        <h2>Starter Section</h2>
-        <p>Necessitatibus eius consequatur ex aliquid fuga eum quidem sint consectetur velit</p>
-      </div><!-- End Section Title -->
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>The People Behind FlexiFrame</h2>
+      <p>Driven by creativity, powered by technology, and united by a passion for excellence.</p>
+    </div><!-- End Section Title -->
 
-      <div class="container" data-aos="fade-up">
-        <p>Use this page as a starter for your own custom pages.</p>
-      </div>
+    <div class="container" data-aos="fade-up">
+      <p>
+        At FlexiFrame, our strength lies in our people. We are a collaborative team of experienced web developers, UI/UX designers, and digital strategists who specialize in building modern, responsive websites using Bootstrap.
+      </p>
 
-    </section><!-- /Starter Section Section -->
+      <p>
+        Our developers focus on writing clean, scalable, and efficient code to ensure every website performs seamlessly across all devices. Our designers craft visually engaging and user-friendly interfaces that enhance user experience and brand identity.
+      </p>
 
-  </main>
+      <p>
+        Together, we work closely with clients to understand their goals, transform their ideas into functional digital solutions, and deliver projects that exceed expectations. Innovation, teamwork, and attention to detail define everything we do.
+      </p>
+
+      <p>
+        With a shared commitment to excellence, the FlexiFrame team continues to help businesses grow by building flexible, future-ready web solutions.
+      </p>
+    </div>
+
+  </section><!-- /Team Section -->
+
+</main>
 
 {% endblock %}

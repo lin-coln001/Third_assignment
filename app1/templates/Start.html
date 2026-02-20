@@ -1,0 +1,123 @@
+{% extends 'base.html' %}
+{% load static %}
+{% block title %}
+    Starter page
+{% endblock %}
+
+{% block content %}
+
+
+
+
+<main class="main">
+
+  <!-- Page Title -->
+  <div class="page-title accent-background">
+    <div class="container position-relative">
+      <h1>Get Started</h1>
+      <p>Ready to build a modern, responsive website with FlexiFrame? Let’s turn your ideas into a powerful digital solution.</p>
+      <nav class="breadcrumbs">
+        <ol>
+          <li><a href="{% url 'index' %}">Home</a></li>
+          <li class="current">Get Started</li>
+        </ol>
+      </nav>
+    </div>
+  </div>
+  <!-- End Page Title -->
+
+  <!-- Get Started Section -->
+  <section id="get-started" class="get-started section">
+
+    <!-- Section Title -->
+    <div class="container section-title" data-aos="fade-up">
+      <h2>Start Your Project</h2>
+      <p>Tell us about your goals and we’ll create a customized solution tailored to your business.</p>
+    </div>
+    <!-- End Section Title -->
+
+    <div class="container" data-aos="fade-up">
+      <div class="row gy-5">
+
+        <!-- Information Column -->
+        <div class="col-lg-5">
+          <div class="info-box p-4 shadow-sm">
+            <h4>Why Choose FlexiFrame?</h4>
+            <ul class="mt-3">
+              <li>✔ Modern Bootstrap-based development</li>
+              <li>✔ Fully responsive and mobile-friendly designs</li>
+              <li>✔ SEO-optimized and fast-loading websites</li>
+              <li>✔ Clean, scalable, and maintainable code</li>
+              <li>✔ Dedicated support and consultation</li>
+            </ul>
+            <p class="mt-3">
+              Whether you're launching a startup website or upgrading your business platform, our team is ready to help you succeed online.
+            </p>
+          </div>
+        </div>
+
+        <!-- Project Form -->
+        <div class="col-lg-7">
+          <div class="card shadow-sm p-4">
+            <form action="forms/get-started.php" method="post">
+
+              <div class="row gy-4">
+
+                <div class="col-md-6">
+                  <label class="form-label">Full Name</label>
+                  <input type="text" name="name" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Email Address</label>
+                  <input type="email" name="email" class="form-control" required>
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Company Name</label>
+                  <input type="text" name="company" class="form-control">
+                </div>
+
+                <div class="col-md-6">
+                  <label class="form-label">Project Type</label>
+                  <select name="project_type" class="form-select" required>
+                    <option value="">Select Project Type</option>
+                    <option>Business Website</option>
+                    <option>E-commerce Website</option>
+                    <option>Landing Page</option>
+                    <option>Web Application</option>
+                    <option>Website Redesign</option>
+                  </select>
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">Project Budget (Optional)</label>
+                  <input type="text" name="budget" class="form-control" placeholder="Estimated budget range">
+                </div>
+
+                <div class="col-md-12">
+                  <label class="form-label">Project Details</label>
+                  <textarea name="details" rows="5" class="form-control" required></textarea>
+                </div>
+
+                <div class="col-md-12 text-center">
+                  <button type="submit" class="btn btn-primary px-4">
+                    Submit Project Request
+                  </button>
+                </div>
+
+              </div>
+
+            </form>
+          </div>
+        </div>
+
+      </div>
+    </div>
+
+  </section>
+  <!-- End Get Started Section -->
+
+</main>
+
+{% endblock %}
